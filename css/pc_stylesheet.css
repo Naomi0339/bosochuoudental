@@ -1,0 +1,9 @@
+.about_pc_flex{
+        display: flex;
+        justify-content: space-around;
+      }
+.footer_information{
+  display: flex;
+  justify-content: center;
+  gap:30px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dental clinic</title>
+    <title>房総中央デンタルクリニック</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,26 +12,212 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css"
+    />
     <link rel="stylesheet" href="css/stylesheet.css" />
   </head>
   <body>
-        <header></header>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <footer></footer>
+    <header>
+      <div class="header_flex">
+        <img src="./images/top-title.png" alt="top-title" />
 
-  <script
+        <!-- モバイルサイズのハンバーガーメニュー -->
+        <div class="menu_opener">
+          <div class="openbtn"><span></span><span></span><span></span></div>
+          <nav id="openbtn_nav">
+            <ul class="openbtn_nav_list">
+              <li><a href="#">ホーム</a></li>
+              <li><a href="#">代表ごあいさつ</a></li>
+              <li><a href="#">当院の特徴</a></li>
+              <li><a href="#">診療案内</a></li>
+              <li><a href="#">料金案内</a></li>
+              <li><a href="#">アクセス</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- PCサイズの横並びナビゲーション -->
+      <div class="pc_header">
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#">代表ごあいさつ</a></li>
+          <li><a href="#">当院の特徴</a></li>
+          <li><a href="#">診療案内</a></li>
+          <li><a href="#">料金案内</a></li>
+          <li><a href="#">アクセス</a></li>
+        </ul>
+      </div>
+    </header>
+    <section id="top_slider">
+      <div id="slider"><!--slider--></div>
+    </section>
+    <section id="news">
+      <h2>お知らせ</h2>
+      <h5>information</h5>
+      <table class="news_table">
+        <tr>
+          <td>2023.3.15.</td>
+          <td>南島医師就任のお知らせ</td>
+        </tr>
+        <tr>
+          <td>2023.3.1.</td>
+          <td>今月のご予約状況</td>
+        </tr>
+        <tr>
+          <td>2023.2.1.</td>
+          <td>今月のご予約状況</td>
+        </tr>
+        <tr>
+          <td>2023.1.15.</td>
+          <td>開院のお知らせ</td>
+        </tr>
+      </table>
+    </section>
+    <section id="greeting">
+      <div>
+        <h2>代表ごあいさつ</h2>
+        <h5>greeting</h5>
+        <p>
+          当院では、治療前に丁寧なカウンセリングを行い、患
+          者様に寄り添った治療を行っております。<br />
+          房総半島随一の最新設備を保有し、患者様の様々なご
+          要望に対応いたします。また、歯周病治療では歯周病
+          菌を除去することもできます。自由診療となります
+          が、痛みはなく、短期間で終了します。<br />
+          開院以来30数年、少しずつ積み上げてきた歯周病の
+          治療・研究の集大成を体験して頂ければと思います。
+        </p>
+      </div>
+      <div>
+        <img src="./images/doctor.jpg" alt="doctor" />
+      </div>
+    </section>
+    <section id="about">
+      <div class="about_titlebar">
+        <img src="./images/about-titlebar.jpg" alt="about-titlebar" />
+        <div class="about_title">
+          <h2>当院について</h2>
+          <h5>About Us</h5>
+        </div>
+      </div>
+      <div class="about_pc_flex about_content">
+        <div>
+          <img src="./images/about1.jpg" alt="about1" />
+          <h3>認定医師が多数常勤</h3>
+          <p>ISO認定医師、専門医認定を受けた 医師が多く常勤しております</p>
+        </div>
+        <div>
+          <img src="./images/about2.jpg" alt="about2" />
+          <h3>丁寧な治療前カウンセリング</h3>
+          <p>治療を行う前に１時間ほどかけて 丁寧なカウンセリングを行います</p>
+        </div>
+        <div>
+          <img src="./images/about3.jpg" alt="about3" />
+          <h3>駐車場50台完備</h3>
+          <p>医院の隣に広い駐車場を備えています</p>
+        </div>
+      </div>
+    </section>
+    <section id="medical_menu">
+      <h2>診療案内</h2>
+      <h5>Medical Menu</h5>
+      <div class="menu_flex">
+        <div class="menu_content">
+          <img src="./images/menu1.png" alt="menu1" />
+          <h3>虫歯治療</h3>
+        </div>
+        <div class="menu_content">
+          <img src="./images/menu2.png" alt="menu2" />
+          <h3>歯周病治療</h3>
+        </div>
+        <div class="menu_content">
+          <img src="./images/menu3.png" alt="menu3" />
+          <h3>ホワイトニング</h3>
+        </div>
+        <div class="menu_content">
+          <img src="./images/menu4.png" alt="menu4" />
+          <h3>小児歯科</h3>
+        </div>
+        <div class="menu_content">
+          <img src="./images/menu5.png" alt="menu5" />
+          <h3>インプラント治療</h3>
+        </div>
+        <div class="menu_content">
+          <img src="./images/menu6.png" alt="menu6" />
+          <h3>矯正歯科</h3>
+        </div>
+        <div class="menu_content">
+          <img src="./images/menu7.png" alt="menu7" />
+          <h3>入れ歯</h3>
+        </div>
+        <div class="menu_content">
+          <img src="./images/menu8.png" alt="menu8" />
+          <h3>訪問治療</h3>
+        </div>
+      </div>
+    </section>
+    <section id="access">
+      <h2>アクセス</h2>
+      <h5>Access</h5>
+      <table>
+        <tr>
+          <td width="80px">住所&#058;</td>
+          <td width="250px">千葉県鴨川市南袖3-2-15</td>
+        </tr>
+        <tr>
+          <td>電話番号&#058;</td>
+          <td>0438-52-3997</td>
+        </tr>
+        <tr>
+          <td>アクセス&#058;</td>
+          <td>国道128号沿いのクリニックの看板を目印にお越しください。</td>
+        </tr>
+      </table>
+      <div class="access_map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d17691.11026516238!2d140.06378203378293!3d35.06082315269134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5q2v5Yy76ICF!5e0!3m2!1sja!2sjp!4v1679608545400!5m2!1sja!2sjp"
+          width="300"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="mobile_size"
+        ></iframe>
+      </div>
+    </section>
+    <div class="loop_wrap">
+      <img src="./images/rollingpic.png"><img src="./images/rollingpic.png">
+    </div>
+    <p id="page_top"><a href="#">↑</a></p>
+    <footer>
+      <img src="./images/footer.png" alt="footer_bg">
+      <div class="footer_information">
+        <p><a href="#">ホーム</a></p>
+          <p><a href="#">代表ごあいさつ</a></p>
+          <p><a href="#">当院の特徴</a></p>
+          <p><a href="#">診療案内</a></p>
+          <p><a href="#">料金案内</a></p>
+          <p><a href="#">アクセス</a></p>
+      </div>
+      <h5>&copy;2023 房総中央デンタルクリニック</h5>
+    </footer>
+
+    <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     ></script>
-
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"
+    ></script>
+
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
