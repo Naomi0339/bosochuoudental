@@ -1,9 +1,128 @@
-.about_pc_flex{
-        display: flex;
-        justify-content: space-around;
-      }
-.footer_information{
-  display: flex;
-  justify-content: center;
-  gap:30px;
+/* ここからタブレットサイズのcss */
+@media (min-width: 768px) {
+  /* header */
+  .header_flex img {
+    width: 60%;
+    margin-left: 10%;
+}
+  .openbtn{
+    width:100px;
+  }
+  .openbtn span:nth-of-type(1) {
+    top: 13px;
+  }
+  
+  .openbtn span:nth-of-type(2) {
+    top: 26px;
+  }
+  
+  .openbtn span:nth-of-type(3) {
+    top: 40px;
+  }
+  
+  .openbtn span:nth-of-type(3)::after {
+    top: 10px;
+    font-size: 0.9rem;
+  }
+  .openbtn_nav_list a {
+    font-size: 1.5em;
+    line-height: 60px;
+  }
+  /* news */
+  .news_table {
+    margin: 3% auto;
+    font-size: 1.5em;
+  }
+  #news{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+  /* greeting */
+  #greeting{
+    margin: 10%;
+  }
+  .greeting_wrapper{
+    display: flex;
+  }
+  .greeting_wrapper img{
+    margin-left: 10%;
+  }
+
+  /* about */
+  #about h3 {
+    font-size: 1em;
+  }
+  .about_wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+
+  }
+  .about_content{
+    width:30%;
+  }
+  /* medical menu */
+  .menu_content{
+    width:25%;
+  }
+  /* access */
+  .access_wrapper{
+    display: flex;
+    margin: 5%;
+  }
+  /* footer */
+  .footer_information {
+    top: 60%;
+    left: 5%;
+}
+
+
+  .footer_information{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+  }
+}
+
+/* ここからPCサイズ */
+@media (min-width: 1024px) {
+  /* footer直前photoループ */
+  .loop_wrapmob{
+    display: none;
+  }
+  .loop_wrap {
+    display: block;
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    overflow: hidden;
+  }
+  .loop_wrap img {
+    width: auto;
+    height: 100%;
+  }
+  @keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+  .loop_wrap img:first-child {
+    animation: loop 50s -25s linear infinite;
+  }
+
+  .loop_wrap img:last-child {
+    animation: loop2 50s linear infinite;
+  }
 }

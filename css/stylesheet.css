@@ -147,6 +147,7 @@ a{
   border-collapse: collapse;
   border-top: double;
   border-bottom: double;
+  margin-top: 3%;
 }
 .news_table td {
   border-width: 2px 0px; /* 上下だけ引く */
@@ -167,16 +168,20 @@ a{
   top: 30%;
   left: 30%;
 }
-.about_content{
+.about_wrapper{
   margin: 10%;
+}
+.about_content{
+  margin-top: 5%;
 }
 #about h3{
   text-align: center;
 }
 /* Medical menu */
-.menu_flex{
+.menu_flex {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5%;
 }
 .menu_content {
   width: 33.333333%;
@@ -199,13 +204,12 @@ a{
   margin-left: 7%;
 }
 /* scroll picture */
-.loop_wrap {
+.loop_wrapmob {
   display: flex;
   width: 100vw;
-  height: 200px;
   overflow: hidden;
 }
-.loop_wrap img {
+.loop_wrapmob img {
   width: auto;
   height: 100%;
 }
@@ -226,12 +230,15 @@ a{
     transform: translateX(-200%);
   }
 }
-.loop_wrap img:first-child {
+.loop_wrapmob img:first-child {
   animation: loop 50s -25s linear infinite;
 }
 
-.loop_wrap img:last-child {
+.loop_wrapmob img:last-child {
   animation: loop2 50s linear infinite;
+}
+.loop_wrap{
+  display: none;
 }
 
 

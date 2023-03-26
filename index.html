@@ -17,6 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css"
     />
     <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/pc_stylesheet.css">
   </head>
   <body>
     <header>
@@ -76,9 +77,10 @@
       </table>
     </section>
     <section id="greeting">
-      <div>
-        <h2>代表ごあいさつ</h2>
-        <h5>greeting</h5>
+      
+      <h2>代表ごあいさつ</h2>
+      <h5>greeting</h5>
+      <div class="greeting_wrapper" >
         <p>
           当院では、治療前に丁寧なカウンセリングを行い、患
           者様に寄り添った治療を行っております。<br />
@@ -89,9 +91,9 @@
           開院以来30数年、少しずつ積み上げてきた歯周病の
           治療・研究の集大成を体験して頂ければと思います。
         </p>
-      </div>
-      <div>
-        <img src="./images/doctor.jpg" alt="doctor" />
+        <div>
+          <img src="./images/doctor.jpg" alt="doctor" />
+        </div>
       </div>
     </section>
     <section id="about">
@@ -102,18 +104,18 @@
           <h5>About Us</h5>
         </div>
       </div>
-      <div class="about_pc_flex about_content">
-        <div>
+      <div class="about_wrapper">
+        <div class="about_content">
           <img src="./images/about1.jpg" alt="about1" />
           <h3>認定医師が多数常勤</h3>
           <p>ISO認定医師、専門医認定を受けた 医師が多く常勤しております</p>
         </div>
-        <div>
+        <div class="about_content">
           <img src="./images/about2.jpg" alt="about2" />
           <h3>丁寧な治療前カウンセリング</h3>
           <p>治療を行う前に１時間ほどかけて 丁寧なカウンセリングを行います</p>
         </div>
-        <div>
+        <div class="about_content">
           <img src="./images/about3.jpg" alt="about3" />
           <h3>駐車場50台完備</h3>
           <p>医院の隣に広い駐車場を備えています</p>
@@ -161,33 +163,38 @@
     <section id="access">
       <h2>アクセス</h2>
       <h5>Access</h5>
-      <table>
-        <tr>
-          <td width="80px">住所&#058;</td>
-          <td width="250px">千葉県鴨川市南袖3-2-15</td>
-        </tr>
-        <tr>
-          <td>電話番号&#058;</td>
-          <td>0438-52-3997</td>
-        </tr>
-        <tr>
-          <td>アクセス&#058;</td>
-          <td>国道128号沿いのクリニックの看板を目印にお越しください。</td>
-        </tr>
-      </table>
-      <div class="access_map">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d17691.11026516238!2d140.06378203378293!3d35.06082315269134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5q2v5Yy76ICF!5e0!3m2!1sja!2sjp!4v1679608545400!5m2!1sja!2sjp"
-          width="300"
-          height="200"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="mobile_size"
-        ></iframe>
+      <div class="access_wrapper">
+        <table>
+          <tr>
+            <td width="80px">住所&#058;</td>
+            <td width="250px">千葉県鴨川市南袖3-2-15</td>
+          </tr>
+          <tr>
+            <td>電話番号&#058;</td>
+            <td>0438-52-3997</td>
+          </tr>
+          <tr>
+            <td>アクセス&#058;</td>
+            <td>国道128号沿いのクリニックの看板を目印にお越しください。</td>
+          </tr>
+        </table>
+        <div class="access_map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d17691.11026516238!2d140.06378203378293!3d35.06082315269134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5q2v5Yy76ICF!5e0!3m2!1sja!2sjp!4v1679608545400!5m2!1sja!2sjp"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="mobile_size"
+          ></iframe>
+        </div>
       </div>
     </section>
+    <div class="loop_wrapmob">
+      <img src="./images/rollingpicmob1.png"><img src="./images/rollingpicmob2.png">
+    </div>
     <div class="loop_wrap">
       <img src="./images/rollingpic.png"><img src="./images/rollingpic.png">
     </div>
