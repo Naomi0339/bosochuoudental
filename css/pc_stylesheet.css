@@ -68,6 +68,7 @@
   /* access */
   .access_wrapper{
     display: flex;
+    justify-content: space-between;
     margin: 5%;
   }
   /* footer */
@@ -86,6 +87,62 @@
 
 /* ここからPCサイズ */
 @media (min-width: 1024px) {
+  header{
+    display: flex;
+    align-items: center;
+  }
+  .header_flex img {
+    margin-left: 0;
+    margin-top: 3%;
+    width:75%;
+    height:75%;
+  }
+  .menu_opener{
+    display: none;
+  }
+  .pc_header{
+    display: block;
+  }
+  .pc_header ul{
+    width:100%;
+    display: flex;
+    z-index: 999;
+  }
+  .pc_header li{
+    width:150px;
+  }
+  .pc_header li a{
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .pc_header li a:hover{
+    color:silver;
+  }
+  
+  .pc_flex,
+  .pc_flex_call,
+  .pc_flex_mail{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .call_icon,.mail_icon{
+    width:30px;
+    height: 30px;
+  }
+  .pc_flex_mail{
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .pc_flex_call,
+  .pc_flex_mail{
+    background-color: aqua;
+    width:150px
+  }
+
+  #slider{
+    height:100vh;
+  }
   /* footer直前photoループ */
   .loop_wrapmob{
     display: none;
@@ -126,3 +183,10 @@
     animation: loop2 50s linear infinite;
   }
 }
+  /* access */
+  .access_map{
+    display: none;
+  }
+  .pc_access_map{
+    display:block;
+  }
