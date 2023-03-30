@@ -102,6 +102,7 @@
   }
   .pc_header{
     display: block;
+    margin-right: 3%;
   }
   .pc_header ul{
     width:100%;
@@ -110,6 +111,7 @@
   }
   .pc_header li{
     width:150px;
+    text-align: center;
   }
   .pc_header li a{
     font-size: 1.3em;
